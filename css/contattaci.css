@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Body */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #0a0727;
+}
+
+/* Scroll Bar */
+
+html::-webkit-scrollbar {
+  width: 20px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #b7b7bb;
+  border: 7px solid #0a0727;
+  border-radius: 100px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 100px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background-color: rgba(255, 255, 255, 0.356);
+  border-radius: 100px;
+}
+
+/* NavBar */
+
+nav {
+  margin: auto;
+  width: 60%;
+  height: 8vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #232141;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navleft {
+  margin: 0 20px;
+  transition: 0.2s;
+  transform: scale(1);
+}
+
+.navleft:hover {
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+
+/* SubMenu */
+
+.sub-menu-1 {
+  height: 150px;
+  width: 155px;
+  display: none;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.navright ul li:hover .sub-menu-1 {
+  height: 160px;
+  width: 155px;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #232141;
+  margin-left: -49.78px;
+  transition: 0.2s;
+}
+
+.navright ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+  transition: 0.2s;
+  font-size: 28px;
+}
+
+/* Fine Sub Menu */
+
+.navright ul li {
+  float: left;
+  list-style: none;
+}
+
+.navright ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.navright ul li a:hover {
+  color: rgb(194, 194, 194);
+  transition: 0.2s;
+}
+
+nav img {
+  height: 55px;
+}
+
+/* Scheda */
+
+.center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.scatola {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vh;
+  height: 70vh;
+  background-color: #232141;
+  border: 1px solid #bebec0;
+  border-radius: 20px;
+  color: white;
+}
+
+.scatola h1 {
+  position: absolute;
+  margin-bottom: 480px;
+}
+
+.scatola p {
+  position: absolute;
+  margin-bottom: 350px;
+  font-size: 18px;
+}
+
+#username,
+#email,
+#message,
+#phone {
+  background-color: #0a0727;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 1px solid #bebec0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: white;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+}
+
+#phone {
+  position: absolute;
+  width: 20%;
+  height: 30px;
+  margin-top: -110px;
+}
+
+#username {
+  width: 20%;
+  height: 30px;
+  margin-top: 10px;
+  resize: none;
+  position: absolute;
+}
+
+#email {
+  width: 20%;
+  height: 30px;
+  margin-top: 130px;
+  resize: none;
+  position: absolute;
+}
+
+#message {
+  width: 20%;
+  height: 50px;
+  margin-top: 270px;
+  resize: none;
+  position: absolute;
+}
+
+#button {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 390px;
+  background-color: #4c4570;
+  border-radius: 7px;
+  color: white;
+  border: none;
+  font-size: 25px;
+  padding: 10px 45px;
+  transition: 0.2s;
+}
+
+#button:hover {
+  transform: scale(1.05);
+  border: 1px solid #bebec0;
+  background-color: #413b5f;
+}
+
+#button:active {
+  transform: scale(1);
+  border: none;
+  background-color: #31316d;
+}
+
+/* Contattaci Manualmente */
+
+.bodylinea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linea {
+  width: 70%;
+  height: 5px;
+  margin-top: 100px;
+  background-color: #bebec0;
+  border-radius: 10px;
+}
+
+.bodymanuale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.manuale {
+    width: 60%;
+    height: 500px;
+    margin-top: 100px;
+    color: white;
+}
+
+.man {
+    font-size: 50px;
+}
+
+.des {
+    margin-top: 10px;
+    font-size: 25px;
+}
