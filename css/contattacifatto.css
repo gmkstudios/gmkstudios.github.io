@@ -17,7 +17,7 @@ body {
 /* Scroll Bar */
 
 html::-webkit-scrollbar {
-  width: 20px;
+  width: 22px;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -67,27 +67,37 @@ nav {
   height: 150px;
   width: 155px;
   display: none;
-  border-radius: 10px;
-  transition: 0.2s;
-}
-
-.navright ul li:hover .sub-menu-1 {
-  height: 160px;
-  width: 155px;
-  display: flex;
   position: absolute;
   text-align: center;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+}
+
+.navright ul li:hover .sub-menu-1 {
+  height: 160px;
+  width: 164px;
+  display: flex;
+  text-align: center;
   background-color: #232141;
   margin-left: -49.78px;
-  transition: 0.2s;
+  margin-top: 10px;
+  animation: transition 0.2s;
+}
+
+@keyframes transition {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .navright ul li:hover .sub-menu-1 ul {
   display: block;
-  margin: 10px;
-  transition: 0.2s;
+  text-align: center;
+  margin: 20px;
   font-size: 28px;
 }
 
@@ -101,14 +111,15 @@ nav {
 .navright ul li a {
   text-decoration: none;
   color: white;
-  padding: 0 20px;
+  border-radius: 10px;
+  padding: 11px 25px;
   font-size: 20px;
-  transition: 0.2s;
 }
 
 .navright ul li a:hover {
-  color: rgb(194, 194, 194);
-  transition: 0.2s;
+  background-color: #bebec0;
+  color: black;
+  border-radius: 5px;
 }
 
 nav img {

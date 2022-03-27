@@ -10,9 +10,9 @@
         $oggetto="Email inviata da: ".$nome."\nIl contenuto della E-mail è: ".$message;
         
         if(mail($myemail, "Oggetto E-mail", $oggetto)){
-            header("location:../home.html");
+            header("location:../index.html");
         }else{
-            echo "errore nella mail";
+            echo "Errore nella mail";
         }
     }
 ?>

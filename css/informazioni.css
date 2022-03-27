@@ -17,7 +17,7 @@ body {
 /* Scroll Bar */
 
 html::-webkit-scrollbar {
-  width: 20px;
+  width: 22px;
 }
 
 html::-webkit-scrollbar-thumb {
