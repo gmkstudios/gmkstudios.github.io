@@ -21,6 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 92vh;
+    /* flex-direction: column; */
   }
   
   .body-title {

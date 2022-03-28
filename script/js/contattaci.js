@@ -17,7 +17,7 @@ function Randomize() {
 
   let language = getCookie("language");
   if (!language) {
-    language = setCookie("language", "Inglese", 365)
+    language = setCookie("language", "Inglese", 365 * 1000)
   }
 
   if (language == "Italiano") {

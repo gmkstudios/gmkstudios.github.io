@@ -3,15 +3,15 @@ document.querySelector("#italiano-click").addEventListener("click", italiano)
 document.querySelector("#francese-click").addEventListener("click", francese)
 
 function inglese() {
-  setCookie("language", "Inglese", 365);
+  setCookie("language", "Inglese", 365 * 1000);
 }
 
 function italiano() {
-  setCookie("language", "Italiano", 365);
+  setCookie("language", "Italiano", 365 * 1000);
 }
 
 function francese() {
-  setCookie("language", "Francese", 365);
+  setCookie("language", "Francese", 365 * 1000);
 }
 
 function setCookie(cname, cvalue, exdays) {
