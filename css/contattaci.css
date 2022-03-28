@@ -18,6 +18,7 @@ body {
 
 html::-webkit-scrollbar {
   width: 22px;
+  background-color: transparent;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -34,96 +35,6 @@ html::-webkit-scrollbar-thumb:hover {
 html::-webkit-scrollbar-thumb:active {
   background-color: rgba(255, 255, 255, 0.356);
   border-radius: 100px;
-}
-
-/* NavBar */
-
-nav {
-  margin: auto;
-  width: 60%;
-  height: 8vh;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #232141;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navleft {
-  margin: 0 20px;
-  transition: 0.2s;
-  transform: scale(1);
-}
-
-.navleft:hover {
-  transition: 0.2s;
-  transform: scale(1.05);
-}
-
-/* SubMenu */
-
-.sub-menu-1 {
-  height: 150px;
-  width: 155px;
-  display: none;
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.navright ul li:hover .sub-menu-1 {
-  height: 160px;
-  width: 164px;
-  display: flex;
-  text-align: center;
-  background-color: #232141;
-  margin-left: -49.78px;
-  margin-top: 10px;
-  animation: transition 0.2s;
-}
-
-@keyframes transition {
-  0% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.navright ul li:hover .sub-menu-1 ul {
-  display: block;
-  text-align: center;
-  margin: 20px;
-  font-size: 28px;
-}
-
-/* Fine Sub Menu */
-
-.navright ul li {
-  float: left;
-  list-style: none;
-}
-
-.navright ul li a {
-  text-decoration: none;
-  color: white;
-  border-radius: 10px;
-  padding: 11px 25px;
-  font-size: 20px;
-}
-
-.navright ul li a:hover {
-  background-color: #bebec0;
-  color: black;
-  border-radius: 5px;
-}
-
-nav img {
-  height: 55px;
 }
 
 /* Scheda */
@@ -278,11 +189,152 @@ nav img {
     color: white;
 }
 
-.man {
+#man {
     font-size: 50px;
 }
 
-.des {
+#des {
     margin-top: 10px;
     font-size: 25px;
+}
+
+.emails {
+    width: 100%;
+    height: 30%;
+    background-color: #232141;
+    border: 1px solid #bebec0;
+    border-radius: 100px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email{
+    display: flex;
+    width: 45%;
+}
+
+#emaila {
+    width: 20.5%;
+    height: 65%;
+    margin-left: 25px;
+    border-radius: 100px;
+    transition: .2s;
+}
+
+#em-titolo {
+    color: #dda809;
+    margin: 15px;
+}
+
+#em-desc {
+    position: relative;
+    margin-top: 60px;
+    right: 108px;
+    font-size: 18px;
+}
+
+.discordd {
+    height: 100%;
+    display: flex;
+}
+
+#discordi {
+    height: 100%;
+    margin-right: -25px;
+}
+
+#ds-titolo {
+    color: #4d60e9;
+    position: absolute;
+    margin-top: 37px;
+    right: 530px;
+}
+
+#ds-desc {
+    color: white;
+    position: absolute;
+    margin-top: 81px;
+    right: 530px;
+    font-size: 18px;
+}
+
+/* Footer */
+  
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  height: 25%;
+  width: 100%;
+  background-color: #232141;
+  transition: 0.3s;
+}
+
+.footer:hover {
+  box-shadow: 0 0 26px 2px rgba(255, 255, 255, 0.315);
+  transition: 0.2s;
+}
+
+.imgmk {
+  display: flex;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -70px;
+  width: 8%;
+  transition: 0.2s;
+}
+
+.imgmk:hover {
+  transform: scale(1.05);
+}
+
+.body-bottoni-destra {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  justify-content: space-between;
+}
+
+.bottoni ul {
+  list-style: none;
+}
+
+.bottoni ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin: 50px;
+  transition: 0.2s;
+}
+
+.bottoni ul li a:hover {
+  color: rgba(255, 255, 255, 0.76);
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.autore {
+  margin-left: 250px;
+  color: white;
+  text-align: center;
+}
+
+.designer {
+  margin-left: 250px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.design {
+  color: white;
+  transition: 0.2s;
+}
+
+.design:hover {
+  color: rgba(255, 255, 255, 0.76);
+  transition: 0.2s;
 }

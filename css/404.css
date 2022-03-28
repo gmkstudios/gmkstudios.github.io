@@ -12,26 +12,6 @@ body {
   background: #0a0727;
 }
 
-html::-webkit-scrollbar {
-  width: 22px;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #b7b7bb;
-  border: 7px solid #0a0727;
-  border-radius: 100px;
-}
-
-html::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.541);
-  border-radius: 100px;
-}
-
-html::-webkit-scrollbar-thumb:active {
-  background-color: rgba(255, 255, 255, 0.356);
-  border-radius: 100px;
-}
-
 .quattrocentoquattro {
   color: #f5f9fd;
 }
@@ -47,17 +27,21 @@ html::-webkit-scrollbar-thumb:active {
 }
 
 a button {
+  position: relative;
   background-color: transparent;
-  color: white;
   padding: 20px 45px;
-  border: 1px solid #bebec0;
-  border-radius: 50px;
+  border: none/* 1px solid #bebec0 */;
+  border-bottom: 12px solid #474747;
+  background-color: #bebec0;
+  border-radius: 46px;
   font-size: 40px;
-  transition: 0.3s;
 }
 
 a button:hover {
-  border: 1px solid #bebec0;
-  background-color: #bebec0;
-  color: black;
+  background-color: #8c8c8d;
+  border-bottom: 12px solid #474747;
+}
+
+a button:active {
+  border-bottom: none;
 }

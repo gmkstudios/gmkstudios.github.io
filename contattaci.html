@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contattaci.css"/>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <script src="https://kit.fontawesome.com/cb0dda5076.js" crossorigin="anonymous"></script>
+    <title>GMK Studio - Contattaci</title>
+  </head>
+  <body>
+
+    <!-- NavBar  -->
+    <nav>
+      <div class="navleft">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="navright">
+        <ul>
+          <li><a href="/" id="nav-home"></a></li>
+          <li><a href="informazioni.html" id="nav-info"></a></li>
+          <li><a href="contattaci.html" id="nav-contact"></a></li>
+          <li>
+            <a href="#" onclick="submenu()" id="nav-lang"></a><i id="linea-lang" class="fa-solid fa-caret-down"></i>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="contattaci.html" id="italiano-click" title="Passa alla lingua Italiana">Italiano</a></li>
+                <li><a href="contattaci.html" id="inglese-click" title="Switch to the English language">English</a></li>
+                <li><a href="contattaci.html" id="francese-click" title="Passer à la langue française">Français</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+      <div class="center">
+        <form action="main.php" method="post">
+            <div class="scatola">
+                <h1 id="scatola-title">Email</h1>
+                <p id="scatola-desc"></p>
+                <input type="text" name="nome" id="username" required>
+                <input type="email" name="email" id="email" required>
+                <textarea name="message" id="message" required></textarea>
+                <input type="submit" value="Invia" id="button">
+            </div>
+        </form>
+    </div>
+
+    <!-- Contattaci Manualmente -->
+    <div class="bodylinea">
+      <div class="linea"></div>
+    </div>
+    <div class="bodymanuale">
+      <div class="manuale">
+        <h1 id="man"></h1>
+        <p id="des"></p>
+            <div class="emails">
+                <div class="email">
+                    <img src="./img/email.png" id="emaila">
+                    <h1 id="em-titolo">Email:</h1>
+                    <p id="em-desc">gmkstudios2022@gmail.com</p>
+                </div>
+                <div class="discordd">
+                    <h1 id="ds-titolo">Discord:</h1>
+                    <a href="https://discord.gg/dgmD2ecK3a" id="ds-desc">https://discord.gg/dgmD2ecK3a</a>
+                    <img src="./img/discord.png" alt="" id="discordi">
+                </div>
+            </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <a href="">
+        <img class="imgmk" title="Vai alla Home" src="../img/logo.png" />
+      </a>
+      <div class="autoredesigner">
+        <h1 class="autore">
+          Sito web creato dal team sviluppatori GMK Studios
+        </h1>
+        <p class="designer">
+          Design creato da
+          <a href="#Goldy" style="text-decoration: none;"><span class="design">Goldy</span></a>
+        </p>
+      </div>
+      <div class="body-bottoni-destra">
+        <div class="bottoni">
+          <ul>
+            <li><a href="">Home</a></li>
+            <br />
+            <li><a href="informazioni.html">Informazioni</a></li>
+            <br />
+            <li><a href="contattaci.html">Contattaci</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+
+    <script src="./script/js/script.js"></script>
+    <script type="module" src="./script/js/contattaci.js  "></script>
+  </body>
+</html>

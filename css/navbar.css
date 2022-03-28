@@ -1,0 +1,118 @@
+/* NavBar */
+
+nav {
+    margin: auto;
+    width: 60%;
+    height: 8vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #232141;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #linea-lang {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .navleft {
+    margin: 0 20px;
+    transition: 0.2s;
+    transform: scale(1);
+  }
+  
+  .navleft:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+  }
+  
+  /* SubMenu */
+  
+  .sub-menu-1 {
+    height: 150px;
+    width: 155px;
+    display: none;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+    
+  .activated {
+    min-height: 180px;
+    min-width: 164px;
+    display: flex;
+    text-align: center;
+    background-color: #232141;
+    border: 1px solid #bebec0;
+    margin-left: -35px;
+    margin-top: 35px;
+    font-size: 30px;
+    animation: transition 0.2s;
+  }
+
+  .activated ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  @keyframes transition {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Fine Sub Menu */
+
+  .navright {
+    margin-right: 25px;
+  }
+  
+  .navright ul li {
+    float: left;
+    list-style: none;
+  }
+  
+  .navright ul li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 9px 23px;
+    font-size: 20px;
+  }
+  
+  .navright ul li a:hover {
+    border-bottom: 2px solid #bebec0;
+    border-radius: 0px;
+  }
+  
+  nav img {
+    height: 55px;
+  }
+
+  .linee {
+      display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navright ul li a {
+        display: none;
+    }
+    .linee {
+        display: flex;
+        font-size: 37px;
+        border-radius: 10px;
+        color: white;
+        margin-left: 290px;
+    }
+  }

@@ -1,13 +1,14 @@
-<!-------- Header --------->
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>GMK Studio - Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <script src="https://kit.fontawesome.com/cb0dda5076.js" crossorigin="anonymous"></script>
+    <title>GMK Studios - Home</title>
   </head>
   <body>
     <!-- NavBar  -->
@@ -17,149 +18,107 @@
           <img src="../img/logo.png" alt="" />
         </a>
       </div>
+
+      <div class="linee">
+        <i class="fas fa-bars"></i>
+      </div>
+
       <div class="navright">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="/it/informazioni.html">Informazioni</a></li>
-          <li><a href="/it/contattaci.html">Contattaci</a></li>
+          <li><a href="" id="nav-home"></a></li>
+          <li><a href="informazioni.html" id="nav-info"></a></li>
+          <li><a href="contattaci.html" id="nav-contact"></a></li>
           <li>
-            <a href="">Lingue</a>
+            <a href="#" onclick="submenu()" id="nav-lang"></a><i id="linea-lang" class="fa-solid fa-caret-down"></i>
             <div class="sub-menu-1">
               <ul>
-                <li><a href="/" title="Passa alla lingua Italiana">Italiano</a></li>
-                <li><a href="../en/home.html" title="Switch to the English language">English</a></li>
-                <li><a href="../fr/home.html" title="Passer à la langue française">Français</a></li>
+                <li><a href="/" id="italiano-click" title="Passa alla lingua Italiana">Italiano</a></li>
+                <li><a href="/" id="inglese-click" title="Switch to the English language">English</a></li>
+                <li><a href="/" id="francese-click" title="Passer à la langue française">Français</a></li>
               </ul>
             </div>
+
           </li>
         </ul>
+
       </div>
+
     </nav>
 
-    <!-- GMK Studios -->
+    <!-- Main -->
     <header class="main">
+      <!-- GMK Studios -->
       <div class="body-title">
         <div class="title">
           <h1>GMK Studios</h1>
-          <p>
-            <span>GMK Studios</span>, è un'azienda appena nata,<br />sviluppatrice
-            di videogiochi, tra cui il suo primo videogioco<br />ancora in
-            sviluppo, ha il nome di "
-            <span>The Dawn of a New Day</span> ",<br />
-            che sarà presto disponibile gratuitamente.
-          </p>
-          <br />
-          <a
-            href="../it/informazioni.html"
-            title="Clicca qui per vedere le altre informazioni"
-            class="title-informazioni"
-            >Altre Informazioni</a
-          >
+          <p id="gmkstudios-description"></p><br/>
+          <a href="informazioni.html" title="Clicca qui per vedere le altre informazioni" id="title-informazioni" class="title-informazioni"></a>
         </div>
       </div>
-
       <!-- Socials -->
       <div class="body-socials">
         <div class="socials">
-          <h1>I nostri social</h1>
-          <p>
-            Noi abbiamo varii social network,<br />tutti i social network sono
-            linkati nei seguenti bottoni.
-          </p>
-          <br />
-          <a
-            href="https://discord.gg/dgmD2ecK3a"
-            class="social-discord"
-            title="Il nostro Discord Ufficiale"
-            >Discord</a
-          >
-          <a
-            href="https://t.me/gmkstudiosofficial"
-            class="social-telegram"
-            title="Il nostro Telegram Ufficiale"
-            >Telegram</a
-          >
-          <a
-            href="#social-twitter"
-            class="social-twitter"
-            title="Il nostro Twitter Ufficiale"
-            >Twitter</a
-          >
-          <p class="p2">Ti ringraziamo!</p>
+          <h1 id="socials-title"></h1>
+          <p id="social-description"></p><br/>
+          <a href="https://discord.gg/dgmD2ecK3a" class="social-discord" title="Il nostro Discord Ufficiale" target=" ">Discord</a>
+          <a href="https://t.me/gmkstudiosofficial" class="social-telegram" title="Il nostro Telegram Ufficiale" target=" ">Telegram</a>
+          <a href="#social-twitter" class="social-twitter" title="Il nostro Twitter Ufficiale" target=" ">Twitter</a>
+          <p class="p2" id="social-thx"></p>
         </div>
       </div>
     </header>
-
-    <!-- Come Progettiamo -->
-    <div class="bodylinea">
-      <div class="linea"></div>
-    </div>
-    <div class="bodyprogettiamo">
-      <div class="cprogettiamo">
-        <div class="bodytitolodesc">
-          <h1 class="titolo">Come Progettiamo</h1>
-          <p class="descrizione">
-            Siamo un team molto lento ma organizzato, ci concentriamo sui minimi
-            dettagli per rendere il videogioco più in linea con le richieste del
-            cliente<br />TDoaND verrà creato con un software molto noto, uno dei
-            migliori<br />Unreal Engine 4, che col tempo potrebbe diventare
-            Unreal Engine 5.<br />Non abbiamo le migliori prestazioni al
-            momento, infatti stiamo cercando di raccogliere fondi per dare ai
-            giocatori<br />
-            il massimo della qualità e della compatibilità. La data di
-            pubblicazione del gioco è prevista a Agosto/Settembre 2022.
+  
+      <!-- Come Progettiamo -->
+      <div class="bodylinea">
+        <div class="linea"></div>
+      </div>
+      <div class="bodyprogettiamo">
+        <div class="cprogettiamo">
+          <div class="bodytitolodesc">
+            <h1 id="progettiamo-title" class="titolo"></h1>
+            <p id="progettiamo-desc" class="descrizione"></p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Quanto costerà il videogioco? -->
+      <div class="bodylinea2">
+        <div class="linea2"></div>
+      </div>
+      <div class="bodyqciv">
+        <div class="qciv">
+          <h1 class="tit" id="costovideo-title"></h1>
+          <p class="desc" id="costovideo-desc"></p>
+        </div>
+      </div>
+  
+      <!-- Footer -->
+      <div class="footer">
+        <a href="">
+          <img class="imgmk" title="Vai alla Home" src="../img/logo.png" />
+        </a>
+        <div class="autoredesigner">
+          <h1 class="autore">
+          </h1>
+          <p class="designer">
+            <!-- <a href="#Goldy" style="text-decoration: none;"><span class="design">Goldy</span></a> -->
           </p>
         </div>
-      </div>
-    </div>
-
-    <!-- Quanto costerà il videogioco? -->
-    <div class="bodylinea2">
-      <div class="linea2"></div>
-    </div>
-    <div class="bodyqciv">
-      <div class="qciv">
-        <h1 class="tit">Quanto costerà il videogioco?</h1>
-        <p class="desc">
-          TDoaND sarà un gioco 100% gratuito, in modalità offline/storia,
-          successivamente, dopo aver ottenuto
-          <br />i fondi necessari, potremmo anche decidere di implementare nel
-          gioco la modalità Online.<br />TDoaND sarà gratuito solo per i primi
-          giocatori, dopodiché verrà impostato il prezzo a circa €10/€15.<br />Nel
-          corso del tempo, potete entrare nel Server Ufficiale di GMK Studios e
-          supportarci nella creazione,<br />fornire alcuni consigli ecc... Avete
-          anche la possibilità di donare qualche €, quest'azione ci sarà di
-          gigantesco aiuto e ci velocizzerà tantissimo nella creazione del
-          videogioco. Accettiamo bonifici via PayPal e PaySafeCard.
-        </p>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <a href="">
-        <img class="imgmk" title="Vai alla Home" src="../img/logo.png" />
-      </a>
-      <div class="autoredesigner">
-        <h1 class="autore">
-          Sito web creato dal team sviluppatori GMK Studios
-        </h1>
-        <p class="designer">
-          Design creato da
-          <a href="#Goldy" style="text-decoration: none;"><span class="design">Goldy</span></a>
-        </p>
-      </div>
-      <div class="body-bottoni-destra">
-        <div class="bottoni">
-          <ul>
-            <li><a href="">Home</a></li>
-            <br />
-            <li><a href="../it/informazioni.html">Informazioni</a></li>
-            <br />
-            <li><a href="../it/contattaci.html">Contattaci</a></li>
-          </ul>
+        <div class="body-bottoni-destra">
+          <div class="bottoni">
+            <ul>
+              <li><a href="">Home</a></li>
+              <br />
+              <li><a href="informazioni.html">Informazioni</a></li>
+              <br />
+              <li><a href="contattaci.html">Contattaci</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
+      </div>  
+
+      <script src="./script/js/script.js"></script>
+      <script type="module" src="./script/js/cookie.js"></script>
+      <script type="module" src="./script/js/home.js"></script>
   </body>
 </html>
